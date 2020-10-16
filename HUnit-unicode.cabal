@@ -1,0 +1,40 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: e8bce2f0acda5365aa987cf5c69c6ff15fa6fd226663c50f650aa86e6fdf611d
+
+name:           HUnit-unicode
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/HUnit-unicode#readme>
+category:       Testing
+homepage:       https://github.com/natsuki14/HUnit-unicode#readme
+bug-reports:    https://github.com/natsuki14/HUnit-unicode/issues
+author:         Natsuki Kawai
+maintainer:     kawai@charon.tech
+license:        PublicDomain
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/natsuki14/HUnit-unicode
+
+library
+  exposed-modules:
+      Test.HUnit.Unicode
+  other-modules:
+      Paths_HUnit_unicode
+  hs-source-dirs:
+      src
+  ghc-options: -Wno-tabs
+  build-depends:
+      HUnit
+    , base >=4.7 && <5
+    , unicode-show
+  default-language: Haskell2010
